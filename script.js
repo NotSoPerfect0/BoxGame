@@ -58,23 +58,28 @@ function Flag(fx, fy, fColor) {
 
 // Key Handling
 function keyDown(event) {
+	console.log(event.key)
     switch(event.key) {
         case "w":
+		case "ArrowUp":
             if (!y == 0) {
                 y -= yv;
             }
             break;
-        case "s":  
+        case "s":
+		case "ArrowDown":
             if (y != (ch - ts)) {
                 y += yv;
             }
             break;
         case "a":
+		case "ArrowLeft":
             if (!x == 0) {
                 x -= xv;
             }
             break;
         case "d":
+		case "ArrowRight":
             if (x != (cw - ts)) {
                 x += xv;
             }
