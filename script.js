@@ -8,7 +8,7 @@ let cw = canvas.width;
 let ch = canvas.height;
 const ts = 50;
 let score = 0;
-const flags = 2;
+const flags = 5;
 let flagList = [];
 
 // Player object info
@@ -96,9 +96,9 @@ function resize() {
     x = 0;
     y = 0;
 
-	for (i = 0; i > flagList.length; i++) {
+	for (i = 0; i < flagList.length; i++) {
 		flagList[i].fx = Math.floor(Math.random() * (cw/50)) * 50;
-		flaglist[i].fy = Math.floor(Math.random() * (ch/50)) * 50;
+		flagList[i].fy = Math.floor(Math.random() * (ch/50)) * 50;
 	}
 }
 
